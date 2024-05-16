@@ -2,5 +2,6 @@
 Repository for solving tests on the learning platform Hexlet
 
 ### TODO
-- [ ] config eslint 9
-- [ ] install jest
+- [x] create makefile
+- [x] config eslint 9
+- [x] install jest
