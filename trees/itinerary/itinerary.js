@@ -1,3 +1,3 @@
-import _ from 'lodash';
+// import _ from 'lodash';
 
-export default (a, b) => _.add(a, b);
+export default (tree, startLocation, endLocation) => [startLocation, endLocation];

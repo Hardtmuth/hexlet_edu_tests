@@ -1,6 +1,9 @@
-import add from '../itinerary.js';
+import itinerary from '../itinerary.js';
+import tree from '../__fixtures__/itinerary_tree.js';
 
-test('test add', () => {
-  expect(add(5, 5)).toEqual(10);
-  expect(add(100, 11)).toEqual(111);
+test('itinerary', () => {
+  expect(itinerary(tree, 'Dubna', 'Kostroma'))
+    .toEqual(['Dubna', 'Tver', 'Moscow', 'Ivanovo', 'Kostroma']);
+  expect(itinerary(tree, 'Borisovka', 'Kurchatov'))
+    .toEqual(['Borisovka', 'Belgorod', 'Kursk', 'Kurchatov']);
 });
